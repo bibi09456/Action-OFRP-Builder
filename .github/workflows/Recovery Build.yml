@@ -31,11 +31,11 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'garden'
+        default: 'beryllium'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_garden'
+        default: 'twrp_beryllium'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
