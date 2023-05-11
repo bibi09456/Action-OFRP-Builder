@@ -101,6 +101,12 @@ jobs:
         git clone ${{ github.event.inputs.COMMON_TREE_URL }} -b ${{ github.event.inputs.COMMON_TREE_BRANCH }} ./${{ github.event.inputs.COMMON_PATH }}
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
+    - name: Clone vendor tree
+      run: |
+        cd ${{ steps.pwd.outputs.workspace-folder }}/fox_${{ github.event.inputs.MANIFEST_BRANCH }}
+        git clone https://gitlab.com/the-muppets/proprietary_vendor_xiaomi.git -b lineage-19.1 ./vendor/xiaomi
+      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
+
     - name: Set Swap Space
       uses: pierotofy/set-swap-space@master
       with:
