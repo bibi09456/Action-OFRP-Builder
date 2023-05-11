@@ -22,12 +22,15 @@ on:
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
+        default: 'https://github.com/LineageOS/android_device_xiaomi_sdm845-common'
       COMMON_TREE_BRANCH:
         description: 'COMMON_TREE_BRANCH (if no common tree, leave blank)'
         required: false
+        default: 'lineage-20'
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
+        default: 'device/xiaomi/sdm845-common'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
